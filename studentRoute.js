@@ -1,12 +1,12 @@
-const express=require("express")
-const router= express.Router()
-const c=require("./studentcontroller")
+const express = require("express");
+const router = express.Router();
+const c = require("./studentcontroller");
 
-router.post("/",c.createstudent)
-router.get("/",c.getstudent)
-router.get("/topper",c.gettopper)
-router.get("/:id",c.getbyid)
-router.put("/:id",c.updatestudent)
-router.delete("/:id",c.deletestudent)
+router.post("/", c.createstudent);
+router.get("/", c.getstudent);
+router.get("/topper", c.gettopper);
+router.get("/:id", c.getbyid);
+router.put("/:id", c.updatestudent);
+router.delete("/:id", c.deletestudent);
 
-module.exports=router
+module.exports = router;
